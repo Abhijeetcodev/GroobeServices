@@ -3,11 +3,11 @@ import React from 'react'
 function Form() {
   return (
 
-    <div className="container my-10 content-center border-2 shadow-xl ">
-      <div className="max-w-lg mx-auto  p-5 mx-2  my-5 bg-grey rounded-md shadow-sm">
+    <div className="container mt-10  space-y-10 content-center border-2 shadow-xl ">
+      <div className="max-w-lg mx-auto  p-5 mx-2  my-10 bg-grey rounded-md shadow-sm ">
         <div className="text-center">
           <h1 className="my-3 text-3xl font-semibold text-gray-700">Contact Us</h1>
-          <p className="text-xl text-gray-400 my-2">Fill up the form below to send us a message.</p>
+          <p className="text-xl text-gray-400  mb-6 ">Fill up the form below to send us a message.</p>
         </div>
         <div>
           <form action="" method="POST">
@@ -33,7 +33,7 @@ function Form() {
                 className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
               />
             </div>
-            <div className="flex flex-row gap-2 my-4">
+            <div className="flex flex-row gap-2 mb-6 my-4">
               <div className="relative flex w-full">
                 <select className="block w-full py-3 pl-4 pr-8 bg-white border border-gray-300 rounded-sm appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
                   <option>Select...</option>
@@ -47,7 +47,7 @@ function Form() {
                   </svg>
                 </div>
               </div>
-              <div className="relative flex w-full">
+              <div className="relative flex  w-full">
                 <select className="block w-full py-3 pl-4 pr-8 bg-white border border-gray-300 rounded-sm appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
                   <option>Select...</option>
                   <option value="male">Service - 1 </option>

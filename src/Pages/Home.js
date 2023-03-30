@@ -4,7 +4,7 @@ const Home = () => {
   return (
 
 
-    <div className='flex  flex-col content-center gap-4 mx-10 my-5'>
+    <div className='flex flex-col  content-center gap-4 mx-20 my-5'>
       <div className='flex md:flex-row sm:flex-col'>
         <div className='item-right'>
           <Hightlights />
@@ -16,11 +16,11 @@ const Home = () => {
       </div>
 
       <div>
-        <h1 className="text-center text-4xl font-bold my-4">Service</h1>
+        <h1 className="text-center text-6xl font-bold my-10 ">Service</h1>
         <ServiceCard />
       </div>
       <div className='Container'>
-      <h1 className="text-center text-4xl font-bold my-4">Gallery</h1>
+      <h1 className="text-center text-6xl font-bold my-10">Gallery</h1>
         <div className='item-right  '>
          <Gallery/>
         </div>

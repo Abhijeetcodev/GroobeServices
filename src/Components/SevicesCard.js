@@ -38,12 +38,12 @@ const SevicesCard = () => {
       {
         ( show ? (
           data.map((item, index) => (
-            <div key={index} className="max-w-sm w-full lg:max-w-full lg:flex  shadow-md">
-              <img className="h-120 lg:h-auto lg:w-80 flex-none bg-cover rounded-t border-1 lg:rounded-lg:rounded-l text-center overflow-hidden" src={item.image} />
+            <div key={index} className="max-w-sm   w-full lg:max-w-full lg:flex  shadow-md">
+              <img className="h-100 w-100 lg:h-auto lg:w-auto flex-none bg-cover rounded-t border-1 lg:rounded-lg:rounded-l text-center overflow-hidden" src={item.image} />
 
-              <div className="border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                <div className="mb-20 mx-10 my-1">
-                  <div className="text-center text-gray-900 font-bold text-2xl mb-2">
+              <div className="flex flex-row border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div className=" mb-20 mx-10 my-1">
+                  <div className="items-center text-center text-gray-900 font-bold text-2xl mb-2">
                     <h1>{item.heading}</h1></div>
                   <h3 className="text-yellow-400 font-semibold my-2 text-xl  text-base">{item.details}</h3>
                   <p className="text-gray-700 text-base">{item.subDetails}</p>
@@ -58,31 +58,42 @@ const SevicesCard = () => {
 
           ))) : (
            data.map((item,index)=> index<2 && (
-            <div key={index} className="max-w-sm w-full lg:max-w-full lg:flex  shadow-md">
-            <img className="h-120 lg:h-auto lg:w-80 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" src={item.image} />
+            <div key={index} className="max-w-sm   w-full lg:max-w-full lg:flex  shadow-md">
+              <img className="h-100 w-100 lg:h-auto lg:w-auto flex-none bg-cover rounded-t border-1 lg:rounded-lg:rounded-l text-center overflow-hidden" src={item.image} />
 
-            <div className="border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div className="mb-20 mx-10 my-1">
-                <div className="text-center text-gray-900 font-bold text-2xl mb-2">
-                  <h1>{item.heading}</h1></div>
-                <h3 className="text-yellow-400 font-semibold my-2 text-xl  text-base">{item.details}</h3>
-                <p className="text-gray-700 text-base">{item.subDetails}</p>
+              <div className="flex flex-col  border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div className=" mb-20 mx-10 my-1">
+                  <div className="items-around text-center text-gray-900 font-bold text-2xl mb-2">
+                    <h1>{item.heading}</h1></div>
+                  <h3 className="text-yellow-400 font-semibold my-2 text-xl  text-base">{item.details}</h3>
+                  <p className="text-gray-700 text-base">{item.subDetails}</p>
+                </div>
+                <button className="content-center bg-blue-600 font-bold py-2 px-4 rounded">
+              Book Now
+              </button>
+
               </div>
-              <button className="content-center bg-blue-600 font-bold py-2 px-4 rounded">
-            Book Now
-            </button>
-
             </div>
-          </div>
-           ))
-           
+
+
+          ))
+
+   
           ))
 
       }
-      <div className="items-center ">
-      <button onClick={Handle} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-           View All Services
-     </button>
+      <div className="content-center  my-10 hidden sm:block">
+      {(show) ? (  
+         <button onClick={Handle} className="bg-blue-500 text-xl  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Close
+   </button>
+      ):( 
+        <button onClick={Handle} className="bg-blue-500 text-xl hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        View All Services
+  </button>
+      )
+      }
+     
       </div>
 
     </div>

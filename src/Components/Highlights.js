@@ -42,8 +42,8 @@ function Highlights() {
           <Carousel
             data={data}
             time={2000}
-            width="700px"
-            height="600px"
+            width="900px"
+            height="700px"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber={true}
@@ -59,8 +59,8 @@ function Highlights() {
             // thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              maxWidth: "700px",
-              maxHeight: "600px",
+              maxWidth: "900px",
+              maxHeight: "700px",
               margin: "40px auto",
             }}
           />
