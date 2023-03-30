@@ -4,12 +4,12 @@ const Home = () => {
   return (
     // flex flex-col gap-4 mx-20 my-5
 
-    <div className='flex flex-col gap-4 mx-10 my-5'>
-      <div className='md:container md:mx-auto flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2'>
-        <div className='item-center'>
+    <div className='flex  flex-col content-center gap-4 mx-10 my-5'>
+      <div className='flex md:flex-row sm:flex-col'>
+        <div className='item-right'>
           <Hightlights />
         </div>
-        <div className='item-center'>
+        <div className='item-left'>
           <Form />
         </div>
 

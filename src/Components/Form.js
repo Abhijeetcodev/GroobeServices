@@ -3,8 +3,8 @@ import React from 'react'
 function Form() {
   return (
 
-    <div className="container my-10 border-2 mx-auto shadow-xl ">
-      <div className="max-w-xl p-5 mx-2  my-5 bg-grey rounded-md shadow-sm">
+    <div className="container my-10 content-center border-2 shadow-xl ">
+      <div className="max-w-lg mx-auto  p-5 mx-2  my-5 bg-grey rounded-md shadow-sm">
         <div className="text-center">
           <h1 className="my-3 text-3xl font-semibold text-gray-700">Contact Us</h1>
           <p className="text-xl text-gray-400 my-2">Fill up the form below to send us a message.</p>
@@ -50,9 +50,9 @@ function Form() {
               <div className="relative flex w-full">
                 <select className="block w-full py-3 pl-4 pr-8 bg-white border border-gray-300 rounded-sm appearance-none cursor-pointer focus:outline-none hover:border-gray-400">
                   <option>Select...</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
+                  <option value="male">Service - 1 </option>
+                  <option value="female">Service - 2 </option>
+                  <option value="other">Service - 3</option>
                 </select>
                 <div className="absolute inset-y-0 right-0 flex items-center px-2 text-blue-400 pointer-events-none">
                   <svg className="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
