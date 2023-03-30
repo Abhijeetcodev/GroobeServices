@@ -42,7 +42,7 @@ function Highlights() {
           <Carousel
             data={data}
             time={2000}
-            width="700px"
+            width="650px"
             height="600px"
             captionStyle={captionStyle}
             radius="10px"
@@ -59,7 +59,7 @@ function Highlights() {
             // thumbnailWidth="100px"
             style={{
               textAlign: "center",
-              maxWidth: "700px",
+              maxWidth: "650px",
               maxHeight: "600px",
               margin: "40px auto",
             }}
